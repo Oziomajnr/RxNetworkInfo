@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private val internetConnectionHelper: InternetConnectionHelper by lazy {
-        InternetConnectionHelper.Companion.getInstance(this)
+        InternetConnectionHelper.getInstance(this)
     }
 
     val disposable: CompositeDisposable = CompositeDisposable()
