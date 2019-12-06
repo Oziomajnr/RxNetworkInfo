@@ -65,7 +65,9 @@ e.g
         })
 See [Demo Activity](https://github.com/Oziomajnr/RxNetworkInfo/blob/master/app/src/main/java/ogbe/ozioma/com/rxnetworkinfo/MainActivity.kt) for a concrete example 
 
- 
 
+
+ ## Backlog
+Support sdk <21
 
  
