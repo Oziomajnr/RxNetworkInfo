@@ -4,8 +4,6 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-group='com.github.oziomajnr'
-
 android {
     compileSdkVersion 29
     defaultConfig {
@@ -38,4 +36,7 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:${rxJava_version}"
     implementation 'io.reactivex.rxjava2:rxkotlin:2.4.0'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    implementation 'com.github.Oziomajnr:RxNetworkInfo:0.0.1'
+
 }
