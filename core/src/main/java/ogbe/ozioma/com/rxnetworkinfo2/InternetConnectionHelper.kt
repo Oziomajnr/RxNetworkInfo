@@ -7,8 +7,9 @@ import android.os.Build
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 
-class InternetConnectionHelper(private val connectivityManager: ConnectivityManager) {
+class InternetConnectionHelper private constructor(private val connectivityManager: ConnectivityManager) {
 
+    companion object : SingletonHolder<InternetConnectionHelper, ConnectivityManager>(::InternetConnectionHelper)
 
     private val newtWorkRequest: NetworkRequest = NetworkRequest.Builder().build()
 
