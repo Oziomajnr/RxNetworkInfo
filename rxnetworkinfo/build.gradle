@@ -37,4 +37,24 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxjava:${rxJava_version}"
     implementation 'io.reactivex.rxjava2:rxkotlin:2.4.0'
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    // Testing
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation "org.robolectric:robolectric:4.3"
+    // Core library
+    androidTestImplementation 'androidx.test:core:1.2.0'
+    testImplementation 'androidx.test:core:1.2.0'
+
+    // AndroidJUnitRunner and JUnit Rules
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+
+    // Assertions
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.ext:truth:1.2.0'
+    androidTestImplementation 'com.google.truth:truth:0.42'
+    androidTestImplementation 'org.mockito:mockito-android:3.1.0'
+    testImplementation "org.mockito:mockito-inline:3.1.0"
+    testImplementation 'org.mockito:mockito-android:3.1.0'
 }
